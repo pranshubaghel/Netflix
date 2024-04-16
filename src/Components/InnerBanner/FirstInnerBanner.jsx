@@ -1,6 +1,10 @@
 import React from 'react'
 import NavInnerBanner from './NavInnerBanner';
-import Movies from '../Movies/Movies';
+import NewMovies from '../Movies/NewMovies';
+import ActionMovies from '../Movies/ActionMovies';
+import TrendingMovies from '../Movies/TrendingMovies';
+import HindiMovies from '../Movies/HindiMovies';
+import InnerFooter from '../NavBar/InnerFooter/InnerFooter';
 
 function FirstInnerBanner() {
   return (
@@ -9,7 +13,7 @@ function FirstInnerBanner() {
     
     
     <div className='h-[500pxpx] w-[30rem]  ml-32 border border-red-600  '>
-    <img src='https://occ-0-6245-2186.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABRP0qVvk0eOlrejKsX2N38Ck4Fly_NIoCnn0rrVetBpPksJFkVc2jhRvvbkyPZeEDoAc7T7ZwEaSTCdwq88bBJ_QoUrKyRaeQT-RWHuJhIkZhW9ElzkPDvw5iVSaRfj_h6iQ7nxOfhDy0unpJ3WoiYV8SO7mF3ee-VlDji7QK-eh34OyLpfHsA.webp?r=c6a'/>
+    <img  src='https://occ-0-6245-2186.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABRP0qVvk0eOlrejKsX2N38Ck4Fly_NIoCnn0rrVetBpPksJFkVc2jhRvvbkyPZeEDoAc7T7ZwEaSTCdwq88bBJ_QoUrKyRaeQT-RWHuJhIkZhW9ElzkPDvw5iVSaRfj_h6iQ7nxOfhDy0unpJ3WoiYV8SO7mF3ee-VlDji7QK-eh34OyLpfHsA.webp?r=c6a'/>
      <p className='font-serif text-2xl text-white'>two hommetown sweethearts reunite after a scandal forces one of them 
      home in this "intimate, beautiful" drama hailed as a "comfort watch" by NME</p>
      <div className='w-[25rem] h-[9vh mb-40]  gap-3 flex'>
@@ -17,7 +21,11 @@ function FirstInnerBanner() {
         <button className='h-[7vh] w-[8rem] border-3 gap-3 flex justify-center text-center  rounded  font-extrabold bg-zinc-600 bg-opacity-65 text-black'><i class="fa-solid fa-circle-exclamation"></i>More Info</button>
      </div>
 </div>
-<Movies/>
+<NewMovies/>
+<ActionMovies/>
+<TrendingMovies/>
+<HindiMovies/>
+<InnerFooter/>
      
     </div>
   )

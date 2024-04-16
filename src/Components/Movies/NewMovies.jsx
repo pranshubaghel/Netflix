@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Movies() {
+function NewMovies() {
     const data = [
         {
             id: 1,
-            poster: 'https://resizing.flixster.com/P3ITKQPm33gw4K73O9DYCOfyZ4E=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzQ1Zjg4NDFhLWMxY2EtNDU3NC04OTNmLTQ4MTJiMzc3Y2EwZC5qcGc=',
+            poster: 'https://occ-0-6245-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSFPl8VnMACDnMdB3Bvw1bGGNDr6HojoGRHhKZt-R8xaci6kqgU3DzT_wz2YO5UhO9by1PNn886ACujezQoLmdmryysydyVDJZQ.webp?r=2bb',
             name: 'DAMSEL'
         },
         {
@@ -36,7 +36,7 @@ function Movies() {
             poster: 'https://occ-0-3752-3647.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABaN6eWetluEMKgRTSWXDB4_ZZu9SkQN2JqixO3KfgvKQOEoBCGvc1atayuEb3BxlzHHydW1EYpFxeR8hwCg5NUMDdBD04DIK2GE.webp?r=49a',
             name: 'CHILLAR PARTY'
         },
-        
+
         {
             id: 7,
             poster: 'https://occ-0-6245-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABYSWCWNMRu35AXpa2cgGtwiEe_PBPCSW0dmkkOU-GTxVLli6YmjOgQAAktKcYi0x1ibmG5XgxTj-6Gw3r57UseXOfugqz2e7Dwk.webp?r=8e8',
@@ -55,21 +55,24 @@ function Movies() {
             name: 'HUM SATH SATH'
         },
 
-    
-            
+
+
 
     ]
     return (
         <div className='w-full h-auto px-20 py-16 flex  grid-cols-3 bg-black border-t-8 border-emerald-950 gap-10'>
-            {data. slice(0, 6).map((value) =>
-                <div className='w-50 h-32 rounded relative'>
+            <h1 className='text-white font-extrabold text-2xl  ml-14 mt-[50px]'>New Movies</h1>
+
+            {data.slice(0, 6).map((value) =>
+                <div className='w-50 h-32 rounded relative hover:border-4  hover:border-teal-600'>
                     <h2 className='text-orange-800 text-4xl font-bold absolute bottom-10 left-16'></h2>
                     <img className='h-full w-full object-cover' src={value.poster} />
-            
-            </div>
-           )}
-                </div>
-            
-            )};
 
-            export default Movies;
+                </div>
+            )}
+        </div>
+
+    )
+};
+
+export default NewMovies;

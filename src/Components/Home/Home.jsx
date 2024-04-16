@@ -1,9 +1,16 @@
 import React from 'react';
 import Nav from '../NavBar/Nav';
-
+import FirstBanner from '../Banner/FirstBanner';
+import SecondBanner from '../Banner/SecondBanner';
+import ThirdBanner from '../Banner/ThirdBanner';
+import FourBanner from '../Banner/FourBanner';
+import QueryDropdown from '../Query/QueryDropdown';
+import Footer from '../Footer/Footer';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
+    <>
     <div className="h-[650px] w-full bg-[url('https://analyticsindiamag.com/wp-content/uploads/2019/05/apps.55787.9007199266246365.687a10a8-4c4a-4a47-8ec5-a95f70d8852d.jpg')] bg-cover bg-no-repeat">
       <Nav />
       <div className='flex items-center justify-center pt-[120px] '>
@@ -17,11 +24,20 @@ function Home() {
       </div>
       <div className='flex  items-center justify-center gap-2 pt-2 '>
         <input className='h-[50px] w-[400px] bg-transparent border border-gray-600 rounded ' placeholder='Email address' />
-         <button className='border border-gray-600 rounded bg-red-600 text-white h-[55px] w-[150px] text-[20px] font-bold'>Get Started  </button> 
+        <Link to={"Sigin"} ><button className='border border-gray-600 rounded bg-red-600 text-white h-[55px] w-[150px] text-[20px] font-bold'>Get Started  </button></Link> 
+      </div>
       </div>
 
+      <FirstBanner/>
+      <SecondBanner/>
+      <ThirdBanner/>
+       <FourBanner/>
+       <QueryDropdown/>
+      <Footer/>
+    
+</>
 
-    </div>
+   
   )
 }
 

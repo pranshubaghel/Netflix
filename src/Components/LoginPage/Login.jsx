@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Login() {
   const [accessToken, setAccessToken] = useState("")
   const handleLogin = () => {
-      const CLIENT_ID = "162506691682-lem8ioa7vth71pen6h55i6921i59oiff.apps.googleusercontent.com"
+      const CLIENT_ID = "918942753381-agho1ge1nipv7q7mb00pafidefvc682k.apps.googleusercontent.com"
       const REDIRECT_URI = "http://localhost:3000/inbox"
       const SCOPE = 'https://mail.google.com/'
       const AUTH_URL = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=${SCOPE}&response_type=token`;

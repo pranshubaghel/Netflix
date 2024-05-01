@@ -62,6 +62,7 @@ function ActionMovies() {
     return (
         <div className='w-full h-auto px-20 py-16 flex  grid-cols-3 bg-black border-t-8 border-emerald-950 gap-10'>
             <h1 className='text-white font-extrabold text-2xl  ml-14 mt-[50px]'>Action Movies</h1>
+            <button className='ml-2 mb-6 text-3xl text-white font-extrabold hover:text-white hover:text-4xl'> <i class="fa-solid fa-chevron-left"></i></button>
             {data.slice(0, 6).map((value) =>
                 <div className='w-50 h-32 rounded relative hover:border-4  hover:border-teal-600'>
                     <h2 className='text-orange-800 text-4xl font-bold absolute bottom-10 left-16'></h2>
@@ -69,6 +70,7 @@ function ActionMovies() {
 
                 </div>
             )}
+             <button className='ml-6 mb-6 text-3xl text-white font-extrabold hover:text-white hover:text-4xl'><i class="fa-solid fa-chevron-right"></i></button>
         </div>
 
     )

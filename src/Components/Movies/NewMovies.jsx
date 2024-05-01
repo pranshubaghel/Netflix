@@ -54,15 +54,12 @@ function NewMovies() {
             poster: 'https://occ-0-3752-3647.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABRlwskPD1ZsR_3TYJIQtpgyyV98qIWOVAQP2O1-gdAPyC_DBzSOypYKcVPKxVX0-dpNS23Ae-9FP9Ad8FimJQv5AMCISYHFGw2o.webp?r=e3e',
             name: 'HUM SATH SATH'
         },
-
-
-
-
     ]
+  
     return (
-        <div className='w-full h-auto px-20 py-16 flex  grid-cols-3 bg-black border-t-8 border-emerald-950 gap-10'>
+        <div className='w-full h-auto  pb-20 px-20 py-16 flex pt-40 grid-cols-3 bg-black border-t-8 border-emerald-950 gap-10'>
             <h1 className='text-white font-extrabold text-2xl  ml-14 mt-[50px]'>New Movies</h1>
-
+        <button className='ml-2 mb-6 text-3xl text-white font-extrabold hover:text-white hover:text-4xl'> <i class="fa-solid fa-chevron-left"></i></button>
             {data.slice(0, 6).map((value) =>
                 <div className='w-50 h-32 rounded relative hover:border-4  hover:border-teal-600'>
                     <h2 className='text-orange-800 text-4xl font-bold absolute bottom-10 left-16'></h2>
@@ -70,6 +67,7 @@ function NewMovies() {
 
                 </div>
             )}
+             <button className='ml-6 mb-6 text-3xl text-white font-extrabold hover:text-white hover:text-4xl'><i class="fa-solid fa-chevron-right"></i></button>
         </div>
 
     )

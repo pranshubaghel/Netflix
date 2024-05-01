@@ -13,8 +13,8 @@ function Footer() {
         <li>Investor Relations</li>
         <li>Privacy</li>
         <li>Speed Test</li>
-        <div className='flex gap-2 px-[50px] ' >
-                <select className='border border-gray-600 bg-black px-3 '>
+        <div className='flex  mt-1 w-[20px] ' >
+                <select className='border  border-gray-600 bg-black  '>
                     <option>English</option>
                     <option>Hindi</option>
                 </select> </div>

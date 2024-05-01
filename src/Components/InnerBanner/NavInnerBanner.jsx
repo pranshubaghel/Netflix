@@ -2,11 +2,12 @@ import React from 'react'
 
 function NavInnerBanner() {
   return (
-    <div className=' h-[600px]'>
-   <div className='flex items-center gap-2'>
-   <img className='h-[70px] w-[120px] ml-[50px]' src="https://www.freepnglogos.com/uploads/netflix-logo-text-emblem-31.png" />
-   <div className='w-[45%] ml-8  cursor-pointer'>
-    <ul className='flex items-center justify-between gap-3 text-gray-600  px-2'>
+    <div className=' h-[70px] border w-full overflow-hidden'>
+   <div className='flex items-center justify-between gap-2'>
+  <div className='flex items-center gap-10'>
+  <img className='h-[70px] w-[120px] ml-[50px]' src="https://www.freepnglogos.com/uploads/netflix-logo-text-emblem-31.png" />
+   <div className='cursor-pointer'>
+    <ul className='flex gap-5 text-gray-600  px-2'>
       <li>Home</li>
       <li>TV Shows</li>
       <li>Movies</li>
@@ -15,8 +16,9 @@ function NavInnerBanner() {
       <li>Browse by Languages</li>
     </ul>
     </div>
+  </div>
     
-    <div className='flex space-x-4 items-center justify-between ml-[300px] text-gray-600 '>
+    <div className='flex space-x-4 items-center justify-between text-gray-600 '>
        <i  class="fa-solid fa-magnifying-glass cursor-pointer text-2xl"></i>
        <p className='cursor-pointer'>Children</p>
        <i class="fa-solid fa-bell cursor-pointer"></i>
